@@ -1,18 +1,7 @@
-// instalado:  npm install --save-dev nyc
-// npm run test:coverage
-// npm run lint && npm run test:coverage
+export const search = (query, type) => 
+  fetch(`https://api.spotify.com/v1/search?q=${query}&type=${type}`)
 
-const FizzBuzz = (num) => {
-  if (num === 0) return 0;
-  if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
-  if (num % 3 === 0) return 'Fizz';
-  if (num % 5 === 0) return 'Buzz';
-
-  return num;
-};
-
-//  function foo() {
-//  return 'bla';
-//  }
-
-export default FizzBuzz;
+export const searchArtists = () => {}
+export const searchAlbuns = () => {}
+export const searchTracks = () => {}
+export const searchPlaylists = () => {}
